@@ -8,7 +8,7 @@
       <label for="pass-input">Senha: </label>
       <input id="pass-input" type="password" placeholder="******" />
 
-      <button type="submit">Login</button>
+      <button class="btn is-success" type="submit">Login</button>
     </form>
   </div>
 </template>
@@ -86,15 +86,6 @@ export default {}
     button {
       margin-top: 1.5rem;
       margin-left: auto;
-      width: 50%;
-      height: 45px;
-      background-color: #008047;
-      border: 1px solid transparent;
-      border-radius: 4px;
-      color: white;
-      font-weight: 500;
-      box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.05),
-        0 100px 80px rgba(0, 0, 0, 0.1);
     }
   }
 }
