@@ -1,7 +1,7 @@
 <template>
   <div class="login__page">
     <h1>Login</h1>
-    <form class="login__form d-flex fd-column" @submit="login">
+    <form class="login__form d-flex fd-column" @submit.prevent="login">
       <label for="email-input">Email: </label>
       <input id="email-input" type="email" placeholder="joao@email.com" />
 
@@ -14,7 +14,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    login() {
+      this.$router.push('/feed')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -73,7 +79,7 @@ export default {}
       background-color: white;
       border: 2px solid white;
       &::placeholder {
-        color: black;
+        color: rgba(0, 0, 0, 0.575);
       }
       &:focus {
         outline: none;
