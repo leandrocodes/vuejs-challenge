@@ -1,24 +1,25 @@
-# desafio-rede-social
+# Desafio de Vue.js da Talentify - Rede Social
 
-## Project setup
-```
-pnpm install
-```
+### Instalar Projeto
 
-### Compiles and hot-reloads for development
 ```
-pnpm run serve
+npm install
 ```
 
-### Compiles and minifies for production
+### Rodar o projeto em modo de desenvolvimento
+
 ```
-pnpm run build
+npm run serve
 ```
 
-### Lints and fixes files
+### Compilar o projeto para publicação em produção
+
 ```
-pnpm run lint
+npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Rodar o lint
+
+```
+npm run lint
+```
