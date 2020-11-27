@@ -29,19 +29,19 @@ export default {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
-    to right top,
-    #f39237,
-    #f27848,
-    #ea6159,
-    #d94e69,
-    #c14377,
-    #a94482,
-    #8d4789,
-    #6f4989,
+    to right bottom,
     #524d84,
-    #3b4e79,
-    #2f4c69,
-    #2f4858
+    #5c5d96,
+    #656ea9,
+    #6f7fbb,
+    #7990ce,
+    #8092d1,
+    #8793d4,
+    #8e95d7,
+    #9486c8,
+    #9877b8,
+    #9b69a6,
+    #9c5a92
   );
 
   h1 {
