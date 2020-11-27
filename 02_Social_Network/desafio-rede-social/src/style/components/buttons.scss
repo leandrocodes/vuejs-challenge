@@ -11,4 +11,8 @@
     background-color: $success;
     color: black;
   }
+  &.is-close {
+    background-color: $red;
+    color: white;
+  }
 }

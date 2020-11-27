@@ -11,7 +11,7 @@
       <p class="post__description">
         {{ post.description }}
       </p>
-      <img :src="post.image" class="post__picture" />
+      <img @click="showModal = true" :src="post.image" class="post__picture" />
     </div>
 
     <div class="post__actions">
@@ -37,14 +37,22 @@
     </div>
 
     <div class="post__comments"></div>
+
+    <transition name="modal">
+      <modal v-if="showModal" @close="showModal = false">
+        <img slot="image" width="100%" :src="post.image" />
+      </modal>
+    </transition>
   </div>
 </template>
 
 <script>
 import comment from './comment'
+import modal from './modal'
 export default {
   components: {
-    comment
+    comment,
+    modal
   },
   props: {
     post: {
@@ -53,7 +61,8 @@ export default {
     }
   },
   data: () => ({
-    comment: ''
+    comment: '',
+    showModal: false
   }),
   methods: {
     addComment() {
@@ -129,5 +138,18 @@ export default {
       }
     }
   }
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  transform: scale(1.1);
 }
 </style>
