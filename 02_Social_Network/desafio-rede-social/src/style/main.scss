@@ -2,5 +2,10 @@
 
 @import './helpers/fonts.scss';
 @import './helpers/display.scss';
+@import './helpers/variables.scss';
 
 @import './components/buttons.scss';
+
+html {
+  background: #dfe0df;
+}
